@@ -39,10 +39,13 @@
 ;; ecb
 (require 'ecb)
 (require 'ecb-autoloads)
+(global-set-key (kbd "<M-right>") 'ecb-goto-window-edit1)
+(global-set-key (kbd "<M-up>") 'ecb-goto-window-methods)
+(global-set-key (kbd "<M-down>") 'ecb-goto-window-sources)
 
-;; flymake
-(require 'flymake)
-(add-hook 'find-file-hook 'flymake-find-file-hook)
+;; ;; flymake
+;; (require 'flymake)
+;; (add-hook 'find-file-hook 'flymake-find-file-hook)
 
 ;; yasnippet
 ;;; yasnippet must be loaded before auto-complete, so that they can work together
